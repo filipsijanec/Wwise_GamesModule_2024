@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{06337B4C-9640-4D6B-9E9E-50E127B7C1A9}" SchemaVersion="103">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{06337B4C-9640-4D6B-9E9E-50E127B7C1A9}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="FirstFloor" ID="{01F09570-E770-45AF-8833-2E3AE51D5825}">
+					<ChildrenList>
+						<Switch Name="Exploration" ID="{07579E27-B53A-4B37-A140-F7172B5ACA5B}"/>
+						<Switch Name="Fight" ID="{CD0818D0-5A82-470F-9C7C-FA92ADDBC168}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Footsteps" ID="{240D33D5-EF35-4DA6-9024-BECB85E87D3D}">
+					<ChildrenList>
+						<Switch Name="Stone" ID="{63E7E41E-1479-4026-9970-7618643BBA7A}"/>
+						<Switch Name="Metal" ID="{6D4F4535-5B79-403A-B3A6-DED6BFB217CF}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
