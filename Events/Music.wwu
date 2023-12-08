@@ -1,6 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{97352A67-4DA4-4BAF-96B3-B58F11FACE57}" SchemaVersion="103" RootDocumentID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}" ParentDocumentID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}">
+<WwiseDocument Type="WorkUnit" ID="{97352A67-4DA4-4BAF-96B3-B58F11FACE57}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Music" ID="{97352A67-4DA4-4BAF-96B3-B58F11FACE57}" OwnerID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}" PersistMode="Nested"/>
+		<WorkUnit Name="Music" ID="{97352A67-4DA4-4BAF-96B3-B58F11FACE57}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Level_start" ID="{D7ADF4BF-F56F-4F3A-AC66-1D56CBFF4BD6}">
+					<ChildrenList>
+						<Action Name="" ID="{8BD0616B-573D-4EA8-B893-F7CB0C2EE662}" ShortID="509157080">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicTemplate" ID="{ED73B1B3-0A1A-42AC-A0D9-3DF0BE5A9D85}" WorkUnitID="{7AFD2662-6DB2-4C3D-B6EA-D446DD52E324}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2E06F21A-FE5A-4AF6-8E02-EC44156DEB01}" ShortID="459833602">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EXPLORE" ID="{6E1CC7EA-AF0F-4FA9-A93E-5BCE33A335E6}" WorkUnitID="{099959B1-0D4A-4376-9CEE-07238FD48A50}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DE8EC63A-061C-4BE9-BF76-ADFC8C48138C}" ShortID="850534825">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="firstFloor" ID="{20BD1DF6-5D0E-423A-86A3-7FA50CDC7A55}" WorkUnitID="{099959B1-0D4A-4376-9CEE-07238FD48A50}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{73A168BD-2014-4E3B-A1BC-58DB8EC85271}" ShortID="196518649">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicTemplate" ID="{ED73B1B3-0A1A-42AC-A0D9-3DF0BE5A9D85}" WorkUnitID="{7AFD2662-6DB2-4C3D-B6EA-D446DD52E324}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Game_unpause" ID="{BEC54676-E8A6-4CD9-B3DA-D9AFAE57BE97}">
+					<ChildrenList>
+						<Action Name="" ID="{CF327B55-F374-4C11-9D8F-0EB32E675845}" ShortID="84818447">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UnPause" ID="{301B8F6D-6092-476A-842D-DADAD32A897F}" WorkUnitID="{099959B1-0D4A-4376-9CEE-07238FD48A50}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Game_pause" ID="{7CB8FB0C-09BF-4906-871E-1F8FC00BC04F}">
+					<ChildrenList>
+						<Action Name="" ID="{4039B524-FE91-4BEC-BA8A-5C88EEE7B4E7}" ShortID="663518016">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pause" ID="{FB626470-A575-4BAF-898A-745B4A0488D0}" WorkUnitID="{099959B1-0D4A-4376-9CEE-07238FD48A50}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Hoverbot_Alert_Music" ID="{ED5CE8BA-8FDF-46DC-A37B-12806A08F67F}">
+					<ChildrenList>
+						<Action Name="" ID="{FB44E6F1-2CB5-48F8-A40A-098E5E23B6F1}" ShortID="20676491">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="35"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hoverbot_Alert" ID="{583EC78A-B9A1-4D31-8489-D0F0416D7A99}" WorkUnitID="{E89DC1EA-CEDC-4CCD-AB8C-3EB218A45AD0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{471AC439-2709-4523-919F-EC3E176573F5}" ShortID="353482808">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FIGHT_HI" ID="{C56E63BF-6942-4E54-8977-64855CB2D448}" WorkUnitID="{099959B1-0D4A-4376-9CEE-07238FD48A50}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Hoverbot_Death_Music" ID="{D5D7AB81-1064-4A97-AB13-0DB88F87FBE4}">
+					<ChildrenList>
+						<Action Name="" ID="{00CC428E-5AA6-4AE2-93E0-DA2EA7CC6877}" ShortID="627980831">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="35"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hoverbot_Alert" ID="{583EC78A-B9A1-4D31-8489-D0F0416D7A99}" WorkUnitID="{E89DC1EA-CEDC-4CCD-AB8C-3EB218A45AD0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7BB5C21F-EABD-4057-B3C6-6040803C1184}" ShortID="13345069">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EXPLORE" ID="{6E1CC7EA-AF0F-4FA9-A93E-5BCE33A335E6}" WorkUnitID="{099959B1-0D4A-4376-9CEE-07238FD48A50}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Level_complete_Music" ID="{3BF49400-D50E-457A-8195-199F612DD2D2}">
+					<ChildrenList>
+						<Action Name="" ID="{C4F22AAA-2C5F-4A19-854F-992C1CB68FFA}" ShortID="472794942">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Victory" ID="{A9EFE354-92C3-4D75-97FE-6450596B648B}" WorkUnitID="{099959B1-0D4A-4376-9CEE-07238FD48A50}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_death_Music" ID="{DE7EAC10-0E50-4B3E-8C69-EC30EBA46919}">
+					<ChildrenList>
+						<Action Name="" ID="{6A2080BD-4FD6-4C90-AA04-D9198808FB55}" ShortID="457046124">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Death" ID="{A2958F34-6CBE-4139-9506-D4C6CF9A3E4C}" WorkUnitID="{099959B1-0D4A-4376-9CEE-07238FD48A50}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F132EB66-C844-4D2F-8BD7-836974F27295}" ShortID="998068822">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EXPLORE" ID="{6E1CC7EA-AF0F-4FA9-A93E-5BCE33A335E6}" WorkUnitID="{099959B1-0D4A-4376-9CEE-07238FD48A50}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

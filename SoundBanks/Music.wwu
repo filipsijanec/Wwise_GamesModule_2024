@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{31417245-AD57-4D73-AA06-5AD79C4E6E56}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{31417245-AD57-4D73-AA06-5AD79C4E6E56}" SchemaVersion="119">
 	<SoundBanks>
-		<WorkUnit Name="Music" ID="{31417245-AD57-4D73-AA06-5AD79C4E6E56}" PersistMode="Standalone"/>
+		<WorkUnit Name="Music" ID="{31417245-AD57-4D73-AA06-5AD79C4E6E56}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Music" ID="{F3BD0B5C-DED3-4E43-87B7-446EF0D3B4C0}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Interactive Music Hierarchy" ID="{49FED366-B530-42A8-993B-924873AAB707}" WorkUnitID="{49FED366-B530-42A8-993B-924873AAB707}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Level_complete_Music" ID="{3BF49400-D50E-457A-8195-199F612DD2D2}" WorkUnitID="{97352A67-4DA4-4BAF-96B3-B58F11FACE57}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Hoverbot_Alert_Music" ID="{ED5CE8BA-8FDF-46DC-A37B-12806A08F67F}" WorkUnitID="{97352A67-4DA4-4BAF-96B3-B58F11FACE57}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Game_pause" ID="{7CB8FB0C-09BF-4906-871E-1F8FC00BC04F}" WorkUnitID="{97352A67-4DA4-4BAF-96B3-B58F11FACE57}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Hoverbot_Death_Music" ID="{D5D7AB81-1064-4A97-AB13-0DB88F87FBE4}" WorkUnitID="{97352A67-4DA4-4BAF-96B3-B58F11FACE57}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player_death_Music" ID="{DE7EAC10-0E50-4B3E-8C69-EC30EBA46919}" WorkUnitID="{97352A67-4DA4-4BAF-96B3-B58F11FACE57}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Game_unpause" ID="{BEC54676-E8A6-4CD9-B3DA-D9AFAE57BE97}" WorkUnitID="{97352A67-4DA4-4BAF-96B3-B58F11FACE57}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Level_start" ID="{D7ADF4BF-F56F-4F3A-AC66-1D56CBFF4BD6}" WorkUnitID="{97352A67-4DA4-4BAF-96B3-B58F11FACE57}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

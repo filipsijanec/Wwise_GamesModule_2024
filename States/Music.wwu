@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{099959B1-0D4A-4376-9CEE-07238FD48A50}" SchemaVersion="119">
+	<States>
+		<WorkUnit Name="Music" ID="{099959B1-0D4A-4376-9CEE-07238FD48A50}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="EXP_FIGHT" ID="{31199290-6C9C-4D41-9D88-077EABCB8623}">
+					<ChildrenList>
+						<State Name="None" ID="{54B7519F-97DF-4350-8FEE-4E21681B9641}"/>
+						<State Name="EXPLORE" ID="{6E1CC7EA-AF0F-4FA9-A93E-5BCE33A335E6}"/>
+						<State Name="FIGHT_HI" ID="{C56E63BF-6942-4E54-8977-64855CB2D448}"/>
+						<State Name="FIGHT_MED" ID="{AC860F10-704C-4C94-BE18-47F1DF542DE2}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Main" ID="{6A7681A2-9EAD-4D60-95B3-77700EF3F932}">
+					<ChildrenList>
+						<State Name="None" ID="{E6273462-BF48-4C3B-B36A-533D3EC972A4}"/>
+						<State Name="firstFloor" ID="{20BD1DF6-5D0E-423A-86A3-7FA50CDC7A55}"/>
+						<State Name="Death" ID="{A2958F34-6CBE-4139-9506-D4C6CF9A3E4C}"/>
+						<State Name="Victory" ID="{A9EFE354-92C3-4D75-97FE-6450596B648B}"/>
+						<State Name="Basement" ID="{1892BC63-A610-4FA1-9A7A-34D40C1462E0}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="PauseMenu" ID="{240A861A-A81A-4461-9E91-47E16AFEFB13}">
+					<ChildrenList>
+						<State Name="None" ID="{F68D34D3-7192-49AE-8F7E-1A5B509DD654}"/>
+						<State Name="Pause" ID="{FB626470-A575-4BAF-898A-745B4A0488D0}"/>
+						<State Name="UnPause" ID="{301B8F6D-6092-476A-842D-DADAD32A897F}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Pause" ID="{FB626470-A575-4BAF-898A-745B4A0488D0}"/>
+							<EndState Name="UnPause" ID="{301B8F6D-6092-476A-842D-DADAD32A897F}"/>
+							<Time>2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

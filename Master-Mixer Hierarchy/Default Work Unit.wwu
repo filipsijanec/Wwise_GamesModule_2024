@@ -1,23 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{0A0AFEEF-373F-42BB-814D-7C6B7EB403EA}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{0A0AFEEF-373F-42BB-814D-7C6B7EB403EA}" SchemaVersion="119">
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{0A0AFEEF-373F-42BB-814D-7C6B7EB403EA}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<ReferenceList>
-						<Reference Name="AudioDevice">
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
 							<ObjectRef Name="System" ID="{78F24CD1-4A36-4992-9DBB-BCE8B74F6D44}" WorkUnitID="{A535DDD1-4A0F-41F8-9BA4-9F975DB322D6}"/>
 						</Reference>
 					</ReferenceList>
-					<ObjectLists/>
+					<ChildrenList>
+						<Bus Name="Music" ID="{E769A5D0-4C22-4B2A-B69C-07896005A797}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>3584</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+						<Bus Name="SFX" ID="{D5505B64-87D7-4DB3-88B5-F39CF3E574DA}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>3584</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 				<Bus Name="Motion Factory Bus" ID="{2AF9B9C6-6EF1-46E9-B5F2-E30C9E602C74}">
 					<ReferenceList>
-						<Reference Name="AudioDevice">
-							<ObjectRef Name="Default_Motion_Device" ID="{EE837239-505A-4369-A178-9C513FC9F31F}" WorkUnitID="{A535DDD1-4A0F-41F8-9BA4-9F975DB322D6}"/>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{78F24CD1-4A36-4992-9DBB-BCE8B74F6D44}" WorkUnitID="{A535DDD1-4A0F-41F8-9BA4-9F975DB322D6}"/>
 						</Reference>
 					</ReferenceList>
-					<ObjectLists/>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

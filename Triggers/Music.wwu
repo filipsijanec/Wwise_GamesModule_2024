@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E89DC1EA-CEDC-4CCD-AB8C-3EB218A45AD0}" SchemaVersion="119">
+	<Triggers>
+		<WorkUnit Name="Music" ID="{E89DC1EA-CEDC-4CCD-AB8C-3EB218A45AD0}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="Hoverbot_Alert" ID="{583EC78A-B9A1-4D31-8489-D0F0416D7A99}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Triggers>
+</WwiseDocument>
