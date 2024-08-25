@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{DF656143-9A8C-4981-AA74-DEBF4574E617}" SchemaVersion="119">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{DF656143-9A8C-4981-AA74-DEBF4574E617}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{DF656143-9A8C-4981-AA74-DEBF4574E617}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="MusicState" ID="{94309C0D-F2E2-4D1A-8A61-F65F5E1735A5}">
+					<ChildrenList>
+						<State Name="None" ID="{F930A5A6-875F-4B04-A009-45AEDB3DCCAF}"/>
+						<State Name="FirstFloor" ID="{1B4EF4D2-D1B3-4FAE-B3E7-378882E878EF}"/>
+						<State Name="Defeated" ID="{6752BCBC-8D69-4E66-97F3-A42A3477AD41}"/>
+						<State Name="Basement" ID="{1FC42B14-7524-4653-8373-FFBA8E5B5E5E}"/>
+						<State Name="Victory" ID="{CD074C30-8C87-4EC0-85A8-3D13E5F71063}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="MusicPause" ID="{53D2375F-372D-4CA9-A425-A237C8BB41A2}">
+					<ChildrenList>
+						<State Name="None" ID="{7C1B4AD0-3774-4962-91FC-D1006253B289}"/>
+						<State Name="Paused" ID="{FDE26E6C-E2D9-477D-9799-D9768B57EF18}"/>
+						<State Name="NotPaused" ID="{6BFDFB45-7580-476C-B1F1-0FA41D851A7A}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

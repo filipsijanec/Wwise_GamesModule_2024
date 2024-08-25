@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{BB730401-DD51-4D67-8AB6-E5DF5B36DB3C}" SchemaVersion="119">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{BB730401-DD51-4D67-8AB6-E5DF5B36DB3C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{BB730401-DD51-4D67-8AB6-E5DF5B36DB3C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_RoomVerb" ID="{3150E6AC-3F77-4FE2-91BB-235D1940BE56}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+					<PropertyList>
+						<Property Name="DecayTime" Type="Real32" Value="0.3"/>
+						<Property Name="Diffusion" Type="Real32" Value="53"/>
+						<Property Name="ERPattern" Type="int32" Value="9"/>
+						<Property Name="RoomSize" Type="Real32" Value="100"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Flanger" ID="{8A9AED97-E62E-4B4B-8ADB-BB20A2A60B5F}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+					<PropertyList>
+						<Property Name="DelayTime" Type="Real32" Value="0.2"/>
+						<Property Name="ModDepth" Type="Real32" Value="100"/>
+						<Property Name="ModFrequency" Type="Real32" Value="20"/>
+						<Property Name="ModWaveform" Type="int32" Value="1"/>
+						<Property Name="OutputLevel" Type="Real32" Value="3"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

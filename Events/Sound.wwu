@@ -8,7 +8,7 @@
 						<Action Name="" ID="{B13B14EA-9486-44DE-9A47-403C3F029EFB}" ShortID="1018594920">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Turret Death" ID="{6029CCAE-5445-40C0-A51A-0AEF95DAF1D7}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+									<ObjectRef Name="Turret_Death" ID="{CFEA5EE6-9C36-4C0F-99E0-8E84D5037CAB}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -19,7 +19,7 @@
 						<Action Name="" ID="{D4AD6435-9BAF-4A20-8730-B3772D4FFEC0}" ShortID="738131502">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Turret Attack" ID="{14E28820-31C5-434B-9B23-F6E9958A3961}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+									<ObjectRef Name="Turret_Attack" ID="{22728107-E791-40CB-9127-0ABB6A53D1FC}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -30,7 +30,7 @@
 						<Action Name="" ID="{21C59146-0A80-41AA-880B-0FC2DFA0C9F3}" ShortID="411902920">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Turret Alert" ID="{D9579893-D5AA-4323-A0F4-8EAC22FCECCD}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+									<ObjectRef Name="Hoverbot_Alert" ID="{67086FE8-315B-4EAB-B465-48CA4249A9B2}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -61,9 +61,26 @@
 				<Event Name="Player_take_damage" ID="{48B5039A-2E0B-4359-8051-3528F4E73E3A}">
 					<ChildrenList>
 						<Action Name="" ID="{9B386D1C-81F3-45DB-93EC-4CF155B5D1CA}" ShortID="826151291">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Pain" ID="{D98EECD2-1CB0-4BA6-AB4F-EC0FE3F14D1C}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BB5AE719-934F-4267-9349-092327281A5D}" ShortID="171781291">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hurt" ID="{9EAABF51-28AE-4E7E-BF32-C9C8CC29EF2B}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -89,6 +106,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{C902EB90-ECD2-4CA5-A26F-DA0DF3316A81}" ShortID="1036183641">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jump" ID="{B660E4AE-F7DF-4126-9074-80E66DB6032F}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Player_footstep" ID="{396CDC3D-A1D6-4B98-ABBE-7DEB518FD66C}">
@@ -107,7 +134,7 @@
 						<Action Name="" ID="{4F713388-76DE-4D5D-B1D6-DFF3D833055A}" ShortID="437374296">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Player fire weapon" ID="{CD4F4245-947B-4BA8-9B3E-E866C47055C1}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+									<ObjectRef Name="Player fire Blaster" ID="{CD4F4245-947B-4BA8-9B3E-E866C47055C1}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -122,6 +149,46 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Notification_Chime" ID="{465332ED-310A-40E9-8C71-631EEC5686E5}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1C662BB4-9B40-42A3-96F4-C03FC309E638}" ShortID="613100750">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hoverbot_alarm" ID="{D5A3E2DB-7EED-4217-97E5-2B7D11FB82D4}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BACD1E22-1E33-4905-8A5E-E70D886B33E6}" ShortID="748952414">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hoverbot_chatter" ID="{37BCB804-9467-456F-8996-A2323C376423}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7A2B3AA3-86B5-449B-998D-903953F51D4F}" ShortID="802812077">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hoverbot_move" ID="{DDC9505F-8E80-4996-814A-A76A089EF3CB}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9040B920-B8AD-4D90-AA49-BF5C1A6C98DF}" ShortID="612173142">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_DX_Defeated" ID="{33D7DF45-DFE3-466F-B295-82CF6D63A66D}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -147,14 +214,42 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{31B53F94-D446-49A8-BC69-F866C908C39D}" ShortID="715906377">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Health" ID="{934FB2EC-BE59-479C-A5E8-2473A44B6792}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Hoverbot_spawn" ID="{C015577A-8E63-47CF-B934-1DFBB4B001A5}">
 					<ChildrenList>
 						<Action Name="" ID="{92FC6772-450E-402A-BC43-994D932F2D44}" ShortID="890682097">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Hoverbot move loop" ID="{6DBB7381-EF10-4D64-9F16-0E687DDC0A93}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3307421E-F0A0-4BA4-9AA7-9FED2178343A}" ShortID="1031979736">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hoverbot_move" ID="{DDC9505F-8E80-4996-814A-A76A089EF3CB}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -162,10 +257,50 @@
 				</Event>
 				<Event Name="Hoverbot_death" ID="{527FDFAD-B84D-44F5-BB9E-B953D35D18D6}">
 					<ChildrenList>
+						<Action Name="" ID="{24DE7939-F8CB-4F8F-99B8-82EF47D255BF}" ShortID="869458975">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hoverbot_alarm" ID="{D5A3E2DB-7EED-4217-97E5-2B7D11FB82D4}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0AB6D6B4-2615-4ABA-BE1A-15813E04DF04}" ShortID="289645021">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hoverbot_chatter" ID="{37BCB804-9467-456F-8996-A2323C376423}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BB240CB1-0812-4066-9B48-7184C17FB8A8}" ShortID="161208407">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hoverbot_move" ID="{DDC9505F-8E80-4996-814A-A76A089EF3CB}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{1469AA2F-3E67-45FF-B7EE-D02D2872D888}" ShortID="824736644">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Hoverbot Death" ID="{F9FC4541-E3C7-4B98-A191-F389916CED4C}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+									<ObjectRef Name="Hoverbot_Death" ID="{BC492F7B-4C57-432E-8B29-9235B9131445}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3B93258D-B69E-4AF3-8217-1321FA4F3212}" ShortID="393356856">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_DX_Victory" ID="{59562C86-181A-4774-9893-C344171DECF6}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -176,7 +311,7 @@
 						<Action Name="" ID="{DAA42EB4-D289-45CE-8285-E05D922581CD}" ShortID="953913524">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Hoverbot Attack" ID="{E04CA6A6-6058-455B-840B-3EFEF2B9A2E7}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+									<ObjectRef Name="Hoverbot_Attack" ID="{47D2C019-C957-4AA0-AD34-6B5A1C8D4D02}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -187,7 +322,28 @@
 						<Action Name="" ID="{5B3BB13A-A188-4548-A613-FACB34DDB004}" ShortID="1049555057">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Hoverbot Alert" ID="{300617E4-5990-4CF3-B2BC-C8355EDF8001}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+									<ObjectRef Name="Hoverbot_Alert" ID="{67086FE8-315B-4EAB-B465-48CA4249A9B2}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DAF8CE12-2C2F-4C53-AF31-C3D060532FAB}" ShortID="19048341">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hoverbot_alarm" ID="{D5A3E2DB-7EED-4217-97E5-2B7D11FB82D4}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6BAC16CE-D59A-448A-8774-594BB459D520}" ShortID="667908982">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hoverbot_chatter" ID="{37BCB804-9467-456F-8996-A2323C376423}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{42087C82-4671-4E1A-9FD7-7D249298A4CD}" ShortID="90757254">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hoverbot_move" ID="{DDC9505F-8E80-4996-814A-A76A089EF3CB}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -226,13 +382,6 @@
 				</Event>
 				<Event Name="Jetpack_empty" ID="{6AD84EC2-5343-4C69-93C9-2C29897B256B}">
 					<ChildrenList>
-						<Action Name="" ID="{F41C0B5D-4DE4-458B-BC25-167058A9A88E}" ShortID="628862088">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="JetPack_empty" ID="{ACEE4C6F-ED4D-4FF2-9A28-816A687DD7E8}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{44BB3BB9-B28E-4753-AF32-359DB380C825}" ShortID="249763030">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
@@ -242,6 +391,165 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="JetPack" ID="{8FF6F640-9398-4F35-9939-11B9BB9AE506}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F41C0B5D-4DE4-458B-BC25-167058A9A88E}" ShortID="628862088">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="JetPack_empty" ID="{ACEE4C6F-ED4D-4FF2-9A28-816A687DD7E8}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="weapon_charge_stop" ID="{F6C25496-EC9C-40AF-979F-572240A8BBB1}">
+					<ChildrenList>
+						<Action Name="" ID="{2D92122A-2D87-4B38-8483-9E2CA2BC0A39}" ShortID="980407801">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="weapon_charge_start" ID="{CD73BC0C-EC50-4FEC-9093-8BBC70FA930F}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B4186518-CB24-457E-B42F-9D9BE59ACA8E}" ShortID="490872714">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="weapon_charge_stop" ID="{AD0E69F6-2828-42D6-83E2-C9F4724A0D56}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="weapon_charge_start" ID="{2AF2505B-345C-4F54-B436-F7BC3C266867}">
+					<ChildrenList>
+						<Action Name="" ID="{BEB1443C-714E-4039-8488-52A409EA748C}" ShortID="634650166">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="weapon_charge_start" ID="{CD73BC0C-EC50-4FEC-9093-8BBC70FA930F}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Key_Pickup" ID="{CAD8003A-A5E5-43C3-8DC0-038563B1E4B7}">
+					<ChildrenList>
+						<Action Name="" ID="{758422B1-AF56-4ED2-8E3D-44B3C1E3A8B2}" ShortID="601579875">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Key_Pickup" ID="{8D526A1F-0DEA-445A-B372-3FDEE7B06573}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BlastDoor_Open" ID="{7DACB8F2-4C78-4A51-95C9-4B85CEA0E57D}">
+					<ChildrenList>
+						<Action Name="" ID="{E94111D8-040A-4A4B-9606-F8680AD96BA6}" ShortID="300606635">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Blastdoor_start" ID="{6C1FB6F7-08DC-4187-95B3-C9A3085BCC92}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{AB7E219D-E12C-4E3D-AA93-6305204F448A}" ShortID="811748083">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Blastdoor_loop" ID="{55678F51-4463-4759-8666-5A37CA696114}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BlastDoor_Stop" ID="{626398CC-937A-473D-82DD-FF1678AEB5AE}">
+					<ChildrenList>
+						<Action Name="" ID="{A828C92E-CCAD-4B7B-9562-6C89B902115F}" ShortID="865973076">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Blastdoor_loop" ID="{55678F51-4463-4759-8666-5A37CA696114}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C6390FD1-E49E-408B-9E70-ABE475BFD8DF}" ShortID="1035779003">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Blastdoor_start" ID="{6C1FB6F7-08DC-4187-95B3-C9A3085BCC92}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3BD40A49-083E-42A7-B0F4-B58447DA224C}" ShortID="824236707">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Blastdoor_stop" ID="{C2CA9B6B-8291-495F-A15C-347C6F3160EB}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="small_doors_open" ID="{C0E351E5-2D71-4ED5-B011-B00394D182E4}">
+					<ChildrenList>
+						<Action Name="" ID="{4319AFA8-472C-4002-8714-26755C1F337B}" ShortID="867534050">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="small_doors_open" ID="{F7B8923D-796A-4D4C-A561-6AA0A413B83C}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="small_doors_stop" ID="{4706203C-2FEB-4D8D-8B07-74F17110ECCD}">
+					<ChildrenList>
+						<Action Name="" ID="{7B5FDB31-449A-4BA9-A521-65CB471FEF99}" ShortID="742465609">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="small_doors_open" ID="{F7B8923D-796A-4D4C-A561-6AA0A413B83C}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3D3A39DC-76F6-44D1-A573-F357DAE94326}" ShortID="565969415">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="small_doors_closing" ID="{FEF03B16-121E-4411-A6A8-3EA5E68E5C77}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A6B89443-4371-4C6C-8961-17DD95B7B932}" ShortID="1021016230">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="small_doors_close" ID="{4023AB7A-25D7-4667-9761-FB63FF3B45AA}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="small_doors_closing" ID="{315C24C1-A41D-4B1E-995D-2F77106FD5C9}">
+					<ChildrenList>
+						<Action Name="" ID="{9FC3A02F-F1A3-4875-8CCC-5A9C6E80AA5B}" ShortID="309148640">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="small_doors_closing" ID="{FEF03B16-121E-4411-A6A8-3EA5E68E5C77}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
