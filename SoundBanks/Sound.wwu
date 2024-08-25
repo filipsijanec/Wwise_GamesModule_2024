@@ -48,6 +48,15 @@
 						<GameSyncRef Name="FirstFloor" ID="{1B4EF4D2-D1B3-4FAE-B3E7-378882E878EF}" WorkUnitID="{DF656143-9A8C-4981-AA74-DEBF4574E617}" Origin="Manual"/>
 					</GameSyncExclusionList>
 				</SoundBank>
+				<SoundBank Name="UI" ID="{A43E332E-208F-4804-A793-61E71EF57CB4}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Menu_Buttons_Back_01" ID="{7830B9B3-3403-430C-B29C-3064995AF989}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Menu_Buttons_Mouse_Over_01" ID="{4DFA138E-EEB7-45DA-B086-8B0694EC518C}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Menu_Buttons_Confirm_01" ID="{8AA0DCDD-F002-48FD-99C9-DA0213CCFBD5}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>
