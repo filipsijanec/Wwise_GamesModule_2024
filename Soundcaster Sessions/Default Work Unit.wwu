@@ -33,10 +33,6 @@
 							<ObjectRef Name="Music_Hoverbot_Death" ID="{D5D7AB81-1064-4A97-AB13-0DB88F87FBE4}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}"/>
 							<Position X="3" Y="0"/>
 						</Module>
-						<Module>
-							<ObjectRef Name="Music_StartButton_Stinger" ID="{08E8E8F1-C60B-4B8E-A0CD-A91BBAD5DC3C}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}"/>
-							<Position X="3" Y="1"/>
-						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -65,7 +61,25 @@
 						<CurrentSwitchRef Name="Explore" ID="{6697BDE0-68AE-4C87-A595-AF3600DA4080}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
-				<SoundcasterSession Name="Music-1" ID="{CF0FEB9E-99D6-4B74-94B2-89434B7B5F3E}">
+				<SoundcasterSession Name="PlayerFire" ID="{CF0FEB9E-99D6-4B74-94B2-89434B7B5F3E}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="shotgun_Pickup" ID="{C7AE64E1-3C5F-4311-80CB-F19590CB41A1}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Shotgun_fire" ID="{EE7E379E-8705-460B-8EDA-11AAC3A31ACC}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_fire" ID="{E4582043-3A24-47AC-862D-BCB01FA3405B}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_Level_Start" ID="{D7ADF4BF-F56F-4F3A-AC66-1D56CBFF4BD6}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Player_health" ID="{55039875-0DDC-4941-8133-4DB04EF01C68}"/>
@@ -85,40 +99,116 @@
 				<SoundcasterSession Name="Sound" ID="{C02B69E3-70D7-4B22-B6F7-E88AFDE80AE1}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Play_Menu_Buttons_Back_01" ID="{7830B9B3-3403-430C-B29C-3064995AF989}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}"/>
+							<ObjectRef Name="BlastDoor_Open" ID="{7DACB8F2-4C78-4A51-95C9-4B85CEA0E57D}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Menu_Buttons_Mouse_Over_01" ID="{4DFA138E-EEB7-45DA-B086-8B0694EC518C}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}"/>
+							<ObjectRef Name="Hoverbot_spawn" ID="{C015577A-8E63-47CF-B934-1DFBB4B001A5}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Menu_Buttons_Confirm_01" ID="{8AA0DCDD-F002-48FD-99C9-DA0213CCFBD5}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}"/>
+							<ObjectRef Name="Pickup_health" ID="{A5ED70EB-EF39-42D2-9E64-11DF57127C34}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_jump" ID="{DE72F29F-CD7E-41F0-8AD3-C73CE6578A5F}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="small_doors_closing" ID="{315C24C1-A41D-4B1E-995D-2F77106FD5C9}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Turret_death" ID="{4B58A06E-72B1-4802-ABC1-9ADCEE8B2F9D}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="BlastDoor_Stop" ID="{626398CC-937A-473D-82DD-FF1678AEB5AE}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Jetpack_empty" ID="{6AD84EC2-5343-4C69-93C9-2C29897B256B}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
-							<Position X="2" Y="0"/>
+							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Pickup_health" ID="{A5ED70EB-EF39-42D2-9E64-11DF57127C34}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
-							<Position X="2" Y="1"/>
+							<ObjectRef Name="Play_Key_Pickup" ID="{CAD8003A-A5E5-43C3-8DC0-038563B1E4B7}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="BlastDoor_Open" ID="{7DACB8F2-4C78-4A51-95C9-4B85CEA0E57D}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
-							<Position X="3" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="BlastDoor_Stop" ID="{626398CC-937A-473D-82DD-FF1678AEB5AE}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
-							<Position X="3" Y="1"/>
+							<ObjectRef Name="Player_land" ID="{9D0933F0-98E3-4554-8BE0-49306A146665}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="1" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="small_doors_open" ID="{C0E351E5-2D71-4ED5-B011-B00394D182E4}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
-							<Position X="4" Y="0"/>
+							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="weapon_charge_start" ID="{2AF2505B-345C-4F54-B436-F7BC3C266867}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Hoverbot_alert" ID="{CD913A91-EE35-4163-BAFB-C4E44495EB32}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Jetpack_start" ID="{D6221E2D-5502-4520-AADE-946957F6F7E8}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_death" ID="{ECED5A3E-05A9-4019-8764-9AB5079E815B}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_take_damage" ID="{48B5039A-2E0B-4359-8051-3528F4E73E3A}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="2" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="small_doors_stop" ID="{4706203C-2FEB-4D8D-8B07-74F17110ECCD}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="2" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="weapon_charge_stop" ID="{F6C25496-EC9C-40AF-979F-572240A8BBB1}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="2" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Hoverbot_attack" ID="{E1D7124E-2A94-40BF-ACCA-B8F1B381A730}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Jetpack_stop" ID="{8E2312E1-C111-4EC1-9990-A7B51CE6F237}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_fire" ID="{E4582043-3A24-47AC-862D-BCB01FA3405B}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Shotgun_fire" ID="{EE7E379E-8705-460B-8EDA-11AAC3A31ACC}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Turret_alert" ID="{8370F033-DD31-4902-A740-DBA452A1165A}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Hoverbot_death" ID="{527FDFAD-B84D-44F5-BB9E-B953D35D18D6}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Level_complete" ID="{E94C4713-BEA7-4B3E-AA49-6454E8191E34}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
 							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_footstep" ID="{396CDC3D-A1D6-4B98-ABBE-7DEB518FD66C}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="shotgun_Pickup" ID="{C7AE64E1-3C5F-4311-80CB-F19590CB41A1}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="4" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Turret_attack" ID="{3A1A265F-0A10-4BBB-8139-D532C04FE851}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="4" Y="4"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">

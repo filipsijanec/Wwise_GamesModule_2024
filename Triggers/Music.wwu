@@ -4,6 +4,7 @@
 		<WorkUnit Name="Music" ID="{E89DC1EA-CEDC-4CCD-AB8C-3EB218A45AD0}" PersistMode="Standalone">
 			<ChildrenList>
 				<Trigger Name="Hoverbot_Alert" ID="{583EC78A-B9A1-4D31-8489-D0F0416D7A99}"/>
+				<Trigger Name="Hoverbot_Death" ID="{4BF64908-FE92-4858-AFE3-BD3C4022455A}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Triggers>

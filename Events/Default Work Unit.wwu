@@ -87,7 +87,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Hoverbot_Alert" ID="{583EC78A-B9A1-4D31-8489-D0F0416D7A99}" WorkUnitID="{E89DC1EA-CEDC-4CCD-AB8C-3EB218A45AD0}"/>
+									<ObjectRef Name="Hoverbot_Death" ID="{4BF64908-FE92-4858-AFE3-BD3C4022455A}" WorkUnitID="{E89DC1EA-CEDC-4CCD-AB8C-3EB218A45AD0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -181,17 +181,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Titles" ID="{EAA7C8E4-4753-46A7-8C64-2CF89FF18F07}" WorkUnitID="{AA8EB0BF-74FA-4291-8E6F-CC9D6EE23DC7}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Music_StartButton_Stinger" ID="{08E8E8F1-C60B-4B8E-A0CD-A91BBAD5DC3C}">
-					<ChildrenList>
-						<Action Name="" ID="{75B7D918-9B4A-4154-B1C4-106B88843875}" ShortID="190983360">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="music_playStinger" ID="{A17D2D0A-4899-488C-A4E3-D7A22F00C624}" WorkUnitID="{AA8EB0BF-74FA-4291-8E6F-CC9D6EE23DC7}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
