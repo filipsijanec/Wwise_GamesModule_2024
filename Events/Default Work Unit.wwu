@@ -66,6 +66,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{336409F7-77E2-4369-8909-A867CB23C900}" ShortID="373423653">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fight" ID="{723FF094-A931-44CF-90CE-646690BE09AD}" WorkUnitID="{06337B4C-9640-4D6B-9E9E-50E127B7C1A9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Music_Hoverbot_Death" ID="{D5D7AB81-1064-4A97-AB13-0DB88F87FBE4}">
@@ -78,6 +88,16 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Hoverbot_Alert" ID="{583EC78A-B9A1-4D31-8489-D0F0416D7A99}" WorkUnitID="{E89DC1EA-CEDC-4CCD-AB8C-3EB218A45AD0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4A3B59BA-6F0C-4839-9B49-6FBA08E954AF}" ShortID="141150480">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explore" ID="{6697BDE0-68AE-4C87-A595-AF3600DA4080}" WorkUnitID="{06337B4C-9640-4D6B-9E9E-50E127B7C1A9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -127,13 +147,13 @@
 				</Event>
 				<Event Name="Music_Basement_Exit" ID="{2A41DFBA-5B61-40F8-B11E-447F0B121D25}">
 					<ChildrenList>
-						<Action Name="" ID="{6D3859AE-DF33-4F65-9E8A-08E21D7B86CA}" ShortID="952752589">
+						<Action Name="" ID="{6035D004-D2B6-478B-A93E-52F7C19B8BF1}" ShortID="307727288">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="FirstFloor" ID="{1B4EF4D2-D1B3-4FAE-B3E7-378882E878EF}" WorkUnitID="{DF656143-9A8C-4981-AA74-DEBF4574E617}"/>
+									<ObjectRef Name="Basement" ID="{1FC42B14-7524-4653-8373-FFBA8E5B5E5E}" WorkUnitID="{DF656143-9A8C-4981-AA74-DEBF4574E617}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
