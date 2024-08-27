@@ -498,6 +498,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="A_Bass_44_120_L4m_P0m" ID="{2AA8365A-0F9D-47CC-AABC-C296C08C52CE}" ShortID="133446789">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0AFEEF-373F-42BB-814D-7C6B7EB403EA}"/>
@@ -1046,6 +1053,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="B_Bass_44_120_L4m_P0m" ID="{E661960E-F948-4262-9C32-8817843404B3}" ShortID="39914353">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0AFEEF-373F-42BB-814D-7C6B7EB403EA}"/>
@@ -1594,6 +1608,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="C_Bass_44_120_L4m_P0m" ID="{D63AF627-D931-46EC-858E-EA213C0480E7}" ShortID="627351737">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0AFEEF-373F-42BB-814D-7C6B7EB403EA}"/>
@@ -2411,10 +2432,11 @@
 										<Value>-5</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="83"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>3</Value>
+										<Value>7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -3108,6 +3130,28 @@
 									</ObjectLists>
 								</MusicSegment>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{14A8AC91-F8E2-4460-A879-FDFD66AC5791}" ShortID="646978707">
+												<PropertyList>
+													<Property Name="Render" Type="bool">
+														<ValueList>
+															<Value>True</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="New_Parametric_EQ" ID="{A1ED2C60-93C7-40EB-AF01-F87A781AFDEA}" WorkUnitID="{BB730401-DD51-4D67-8AB6-E5DF5B36DB3C}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 						</MusicPlaylistContainer>
 						<Folder Name="Stingers" ID="{CA870F8B-2F19-4D3B-95D7-76C5D845AC14}" ShortID="811165449">
 							<ChildrenList>
@@ -3319,6 +3363,11 @@
 								<MusicSegment Name="InGame_Cymbals" ID="{D338843E-39B3-4ADF-B0CD-808A6F62F9D3}" ShortID="52311233">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="4878.02083333333"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">

@@ -129,6 +129,11 @@
 								<Sound Name="Turret_Attack" ID="{22728107-E791-40CB-9127-0ABB6A53D1FC}" ShortID="938099597">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
