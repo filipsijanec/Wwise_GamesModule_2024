@@ -10,6 +10,7 @@
 						<State Name="Defeated" ID="{6752BCBC-8D69-4E66-97F3-A42A3477AD41}"/>
 						<State Name="Basement" ID="{1FC42B14-7524-4653-8373-FFBA8E5B5E5E}"/>
 						<State Name="Victory" ID="{CD074C30-8C87-4EC0-85A8-3D13E5F71063}"/>
+						<State Name="Titles" ID="{1DE36534-BAD4-42DA-8BFC-C73285C133D3}"/>
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="MusicPause" ID="{53D2375F-372D-4CA9-A425-A237C8BB41A2}">

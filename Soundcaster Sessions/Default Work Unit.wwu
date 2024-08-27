@@ -58,7 +58,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{7C1B4AD0-3774-4962-91FC-D1006253B289}"/>
-						<CurrentStateRef Name="None" ID="{F930A5A6-875F-4B04-A009-45AEDB3DCCAF}"/>
+						<CurrentStateRef Name="FirstFloor" ID="{1B4EF4D2-D1B3-4FAE-B3E7-378882E878EF}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Metal" ID="{6D4F4535-5B79-403A-B3A6-DED6BFB217CF}"/>
