@@ -2283,6 +2283,11 @@
 						<MusicSegment Name="Loose_Stinger" ID="{46AD6F68-D5FA-4783-937D-8ABDA796C5C3}" ShortID="520219662">
 							<PropertyList>
 								<Property Name="EndPosition" Type="Real64" Value="20240.9583333333"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
