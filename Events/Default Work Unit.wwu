@@ -162,11 +162,7 @@
 				<Event Name="Music_Play_Titles" ID="{5DCCD5A6-9232-426C-A4AE-1312935522DE}">
 					<ChildrenList>
 						<Action Name="" ID="{434CF6BE-986A-4DE9-A238-0FFEB3CF03F2}" ShortID="687631405">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Titles" ID="{EAA7C8E4-4753-46A7-8C64-2CF89FF18F07}" WorkUnitID="{AA8EB0BF-74FA-4291-8E6F-CC9D6EE23DC7}"/>
-								</Reference>
-							</ReferenceList>
+							<ReferenceList/>
 						</Action>
 					</ChildrenList>
 				</Event>
@@ -178,11 +174,7 @@
 								<Property Name="FadeOutCurve" Type="int16" Value="2"/>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Titles" ID="{EAA7C8E4-4753-46A7-8C64-2CF89FF18F07}" WorkUnitID="{AA8EB0BF-74FA-4291-8E6F-CC9D6EE23DC7}"/>
-								</Reference>
-							</ReferenceList>
+							<ReferenceList/>
 						</Action>
 					</ChildrenList>
 				</Event>
