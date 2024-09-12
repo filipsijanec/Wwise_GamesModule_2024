@@ -36,7 +36,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="shotgun_Pickup" ID="{C7AE64E1-3C5F-4311-80CB-F19590CB41A1}">
+				<Event Name="Pickup_shotgun" ID="{C7AE64E1-3C5F-4311-80CB-F19590CB41A1}">
 					<ChildrenList>
 						<Action Name="" ID="{05678F3A-5684-464A-8384-B52C5B96AC9E}" ShortID="814643437">
 							<ReferenceList>
@@ -47,7 +47,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Shotgun_fire" ID="{EE7E379E-8705-460B-8EDA-11AAC3A31ACC}">
+				<Event Name="Player_fire_shotgun" ID="{EE7E379E-8705-460B-8EDA-11AAC3A31ACC}">
 					<ChildrenList>
 						<Action Name="" ID="{12D94450-D71E-4F8B-AAC1-4BB743C80CA3}" ShortID="958514306">
 							<ReferenceList>
@@ -439,7 +439,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Key_Pickup" ID="{CAD8003A-A5E5-43C3-8DC0-038563B1E4B7}">
+				<Event Name="Pickup_key" ID="{CAD8003A-A5E5-43C3-8DC0-038563B1E4B7}">
 					<ChildrenList>
 						<Action Name="" ID="{758422B1-AF56-4ED2-8E3D-44B3C1E3A8B2}" ShortID="601579875">
 							<ReferenceList>
@@ -555,6 +555,40 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Menu_Buttons_Mouse_Over" ID="{4DFA138E-EEB7-45DA-B086-8B0694EC518C}">
+					<ChildrenList>
+						<Action Name="" ID="{CCD4AD80-C279-4ABC-A8F7-F2B03DAEBE92}" ShortID="945266876">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu_Buttons_Mouse_Over_01" ID="{BB50C51B-AC10-4314-9775-E8E69C01AACF}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Menu_Buttons_Back" ID="{7830B9B3-3403-430C-B29C-3064995AF989}">
+					<ChildrenList>
+						<Action Name="" ID="{450AC49F-A1FB-4D11-940E-BCE2732B571A}" ShortID="738388050">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu_Buttons_Back_01" ID="{5154E941-5293-4DA1-BE38-E226230EBF50}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Menu_Buttons_Confirm" ID="{8AA0DCDD-F002-48FD-99C9-DA0213CCFBD5}">
+					<ChildrenList>
+						<Action Name="" ID="{F89A445A-FDF4-4149-919B-CDF3A18836EE}" ShortID="351591978">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu_Buttons_Confirm_01" ID="{C82EB0EB-2F23-4EC4-9899-5A5C2BADC042}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Level_start" ID="{1083295C-F9AE-431F-8AA4-F0126475301D}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

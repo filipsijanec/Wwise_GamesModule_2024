@@ -36,6 +36,10 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="Player_speed" ID="{773ACA32-3023-4067-AC11-68D916790644}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="MasterSound" ID="{2A4F1A46-894D-4833-85F6-BACE9FE9C6FD}"/>
 							<Value>50</Value>
 						</RTPCValue>
@@ -64,11 +68,11 @@
 				<SoundcasterSession Name="PlayerFire" ID="{CF0FEB9E-99D6-4B74-94B2-89434B7B5F3E}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="shotgun_Pickup" ID="{C7AE64E1-3C5F-4311-80CB-F19590CB41A1}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<ObjectRef Name="Pickup_shotgun" ID="{C7AE64E1-3C5F-4311-80CB-F19590CB41A1}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Shotgun_fire" ID="{EE7E379E-8705-460B-8EDA-11AAC3A31ACC}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<ObjectRef Name="Player_fire_shotgun" ID="{EE7E379E-8705-460B-8EDA-11AAC3A31ACC}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
@@ -131,7 +135,7 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Key_Pickup" ID="{CAD8003A-A5E5-43C3-8DC0-038563B1E4B7}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<ObjectRef Name="Pickup_key" ID="{CAD8003A-A5E5-43C3-8DC0-038563B1E4B7}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
@@ -183,7 +187,7 @@
 							<Position X="3" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Shotgun_fire" ID="{EE7E379E-8705-460B-8EDA-11AAC3A31ACC}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<ObjectRef Name="Player_fire_shotgun" ID="{EE7E379E-8705-460B-8EDA-11AAC3A31ACC}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
 							<Position X="3" Y="3"/>
 						</Module>
 						<Module>
@@ -203,7 +207,7 @@
 							<Position X="4" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="shotgun_Pickup" ID="{C7AE64E1-3C5F-4311-80CB-F19590CB41A1}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<ObjectRef Name="Pickup_shotgun" ID="{C7AE64E1-3C5F-4311-80CB-F19590CB41A1}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
 							<Position X="4" Y="3"/>
 						</Module>
 						<Module>

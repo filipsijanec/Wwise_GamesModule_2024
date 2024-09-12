@@ -11,13 +11,14 @@
 						<ObjectRef Name="Hoverbot_alert" ID="{CD913A91-EE35-4163-BAFB-C4E44495EB32}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_jump" ID="{DE72F29F-CD7E-41F0-8AD3-C73CE6578A5F}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Pickup_health" ID="{A5ED70EB-EF39-42D2-9E64-11DF57127C34}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="shotgun_Pickup" ID="{C7AE64E1-3C5F-4311-80CB-F19590CB41A1}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pickup_shotgun" ID="{C7AE64E1-3C5F-4311-80CB-F19590CB41A1}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Level_start" ID="{1083295C-F9AE-431F-8AA4-F0126475301D}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_take_damage" ID="{48B5039A-2E0B-4359-8051-3528F4E73E3A}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Key_Pickup" ID="{CAD8003A-A5E5-43C3-8DC0-038563B1E4B7}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pickup_key" ID="{CAD8003A-A5E5-43C3-8DC0-038563B1E4B7}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Hoverbot_death" ID="{527FDFAD-B84D-44F5-BB9E-B953D35D18D6}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jetpack_start" ID="{D6221E2D-5502-4520-AADE-946957F6F7E8}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_land" ID="{9D0933F0-98E3-4554-8BE0-49306A146665}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Shotgun_fire" ID="{EE7E379E-8705-460B-8EDA-11AAC3A31ACC}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player_fire_shotgun" ID="{EE7E379E-8705-460B-8EDA-11AAC3A31ACC}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BlastDoor_Stop" ID="{626398CC-937A-473D-82DD-FF1678AEB5AE}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_fire" ID="{E4582043-3A24-47AC-862D-BCB01FA3405B}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Hoverbot_spawn" ID="{C015577A-8E63-47CF-B934-1DFBB4B001A5}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
@@ -50,9 +51,9 @@
 				</SoundBank>
 				<SoundBank Name="UI" ID="{A43E332E-208F-4804-A793-61E71EF57CB4}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_Menu_Buttons_Back_01" ID="{7830B9B3-3403-430C-B29C-3064995AF989}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Menu_Buttons_Mouse_Over_01" ID="{4DFA138E-EEB7-45DA-B086-8B0694EC518C}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Menu_Buttons_Confirm_01" ID="{8AA0DCDD-F002-48FD-99C9-DA0213CCFBD5}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Menu_Buttons_Back" ID="{7830B9B3-3403-430C-B29C-3064995AF989}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Menu_Buttons_Mouse_Over" ID="{4DFA138E-EEB7-45DA-B086-8B0694EC518C}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Menu_Buttons_Confirm" ID="{8AA0DCDD-F002-48FD-99C9-DA0213CCFBD5}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

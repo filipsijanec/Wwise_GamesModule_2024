@@ -159,58 +159,8 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Music_Play_Titles" ID="{5DCCD5A6-9232-426C-A4AE-1312935522DE}">
-					<ChildrenList>
-						<Action Name="" ID="{434CF6BE-986A-4DE9-A238-0FFEB3CF03F2}" ShortID="687631405">
-							<ReferenceList/>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Music_Stop_Titles" ID="{EC0CC8B6-76C9-4689-9F0E-8B66EF8CEF02}">
-					<ChildrenList>
-						<Action Name="" ID="{F1D978DB-FEBE-426B-86AA-C4242E9C62F9}" ShortID="543915536">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeOutCurve" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-							</PropertyList>
-							<ReferenceList/>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Menu_Buttons_Mouse_Over_01" ID="{4DFA138E-EEB7-45DA-B086-8B0694EC518C}">
-					<ChildrenList>
-						<Action Name="" ID="{CCD4AD80-C279-4ABC-A8F7-F2B03DAEBE92}" ShortID="945266876">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Menu_Buttons_Mouse_Over_01" ID="{BB50C51B-AC10-4314-9775-E8E69C01AACF}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Menu_Buttons_Back_01" ID="{7830B9B3-3403-430C-B29C-3064995AF989}">
-					<ChildrenList>
-						<Action Name="" ID="{450AC49F-A1FB-4D11-940E-BCE2732B571A}" ShortID="738388050">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Menu_Buttons_Back_01" ID="{5154E941-5293-4DA1-BE38-E226230EBF50}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Menu_Buttons_Confirm_01" ID="{8AA0DCDD-F002-48FD-99C9-DA0213CCFBD5}">
-					<ChildrenList>
-						<Action Name="" ID="{F89A445A-FDF4-4149-919B-CDF3A18836EE}" ShortID="351591978">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Menu_Buttons_Confirm_01" ID="{C82EB0EB-2F23-4EC4-9899-5A5C2BADC042}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				<Event Name="Music_Play_Titles" ID="{5DCCD5A6-9232-426C-A4AE-1312935522DE}"/>
+				<Event Name="Music_Stop_Titles" ID="{EC0CC8B6-76C9-4689-9F0E-8B66EF8CEF02}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
