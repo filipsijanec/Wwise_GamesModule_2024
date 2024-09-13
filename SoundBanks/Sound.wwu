@@ -15,6 +15,7 @@
 						<ObjectRef Name="Level_start" ID="{1083295C-F9AE-431F-8AA4-F0126475301D}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_take_damage" ID="{48B5039A-2E0B-4359-8051-3528F4E73E3A}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Pickup_key" ID="{CAD8003A-A5E5-43C3-8DC0-038563B1E4B7}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Hoverbot_alert_stop" ID="{A27754EB-7144-442C-AAFA-2B86BD1C06D9}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Hoverbot_death" ID="{527FDFAD-B84D-44F5-BB9E-B953D35D18D6}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jetpack_start" ID="{D6221E2D-5502-4520-AADE-946957F6F7E8}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_land" ID="{9D0933F0-98E3-4554-8BE0-49306A146665}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}" Origin="Manual" Filter="7"/>
