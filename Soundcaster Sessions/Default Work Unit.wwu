@@ -6,15 +6,11 @@
 				<SoundcasterSession Name="Music" ID="{AC85F335-8B54-478C-BD00-1B1D438D222B}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Music_Play_Titles" ID="{5DCCD5A6-9232-426C-A4AE-1312935522DE}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Music_Stop_Titles" ID="{EC0CC8B6-76C9-4689-9F0E-8B66EF8CEF02}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Music_Level_Start" ID="{D7ADF4BF-F56F-4F3A-AC66-1D56CBFF4BD6}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}"/>
+							<ObjectRef Name="Music_Game_Start" ID="{D7ADF4BF-F56F-4F3A-AC66-1D56CBFF4BD6}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
@@ -33,11 +29,23 @@
 							<ObjectRef Name="Music_Hoverbot_Death" ID="{D5D7AB81-1064-4A97-AB13-0DB88F87FBE4}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}"/>
 							<Position X="3" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Hoverbot_alert" ID="{CD913A91-EE35-4163-BAFB-C4E44495EB32}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Enemy_Stop_sound" ID="{A27754EB-7144-442C-AAFA-2B86BD1C06D9}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="3" Y="2"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Player_speed" ID="{773ACA32-3023-4067-AC11-68D916790644}"/>
 							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Hoverbot_alerted_count" ID="{D9C05E2C-7322-4384-A4AF-52AACA48C764}"/>
+							<Value>1.37462537462537</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="MasterSound" ID="{2A4F1A46-894D-4833-85F6-BACE9FE9C6FD}"/>
@@ -58,11 +66,11 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{7C1B4AD0-3774-4962-91FC-D1006253B289}"/>
-						<CurrentStateRef Name="FirstFloor" ID="{1B4EF4D2-D1B3-4FAE-B3E7-378882E878EF}"/>
+						<CurrentStateRef Name="Titles" ID="{1DE36534-BAD4-42DA-8BFC-C73285C133D3}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Metal" ID="{6D4F4535-5B79-403A-B3A6-DED6BFB217CF}"/>
-						<CurrentSwitchRef Name="Explore" ID="{6697BDE0-68AE-4C87-A595-AF3600DA4080}"/>
+						<CurrentSwitchRef Name="Fight" ID="{723FF094-A931-44CF-90CE-646690BE09AD}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="PlayerFire" ID="{CF0FEB9E-99D6-4B74-94B2-89434B7B5F3E}">
@@ -80,7 +88,7 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Music_Level_Start" ID="{D7ADF4BF-F56F-4F3A-AC66-1D56CBFF4BD6}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}"/>
+							<ObjectRef Name="Music_Game_Start" ID="{D7ADF4BF-F56F-4F3A-AC66-1D56CBFF4BD6}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 					</ModuleList>
@@ -103,10 +111,6 @@
 				<SoundcasterSession Name="Sound" ID="{C02B69E3-70D7-4B22-B6F7-E88AFDE80AE1}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="BlastDoor_Open" ID="{7DACB8F2-4C78-4A51-95C9-4B85CEA0E57D}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Hoverbot_spawn" ID="{C015577A-8E63-47CF-B934-1DFBB4B001A5}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
 							<Position X="0" Y="1"/>
 						</Module>
@@ -125,10 +129,6 @@
 						<Module>
 							<ObjectRef Name="Turret_death" ID="{4B58A06E-72B1-4802-ABC1-9ADCEE8B2F9D}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
 							<Position X="0" Y="5"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="BlastDoor_Stop" ID="{626398CC-937A-473D-82DD-FF1678AEB5AE}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
-							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Jetpack_empty" ID="{6AD84EC2-5343-4C69-93C9-2C29897B256B}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
@@ -151,10 +151,6 @@
 							<Position X="1" Y="5"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Hoverbot_alert" ID="{CD913A91-EE35-4163-BAFB-C4E44495EB32}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
-							<Position X="2" Y="0"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Jetpack_start" ID="{D6221E2D-5502-4520-AADE-946957F6F7E8}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
 							<Position X="2" Y="1"/>
 						</Module>
@@ -175,14 +171,6 @@
 							<Position X="2" Y="5"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Hoverbot_attack" ID="{E1D7124E-2A94-40BF-ACCA-B8F1B381A730}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
-							<Position X="3" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Jetpack_stop" ID="{8E2312E1-C111-4EC1-9990-A7B51CE6F237}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
-							<Position X="3" Y="1"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Player_fire" ID="{E4582043-3A24-47AC-862D-BCB01FA3405B}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
 							<Position X="3" Y="2"/>
 						</Module>
@@ -193,14 +181,6 @@
 						<Module>
 							<ObjectRef Name="Turret_alert" ID="{8370F033-DD31-4902-A740-DBA452A1165A}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
 							<Position X="3" Y="4"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Hoverbot_death" ID="{527FDFAD-B84D-44F5-BB9E-B953D35D18D6}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
-							<Position X="4" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Level_complete" ID="{E94C4713-BEA7-4B3E-AA49-6454E8191E34}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
-							<Position X="4" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Player_footstep" ID="{396CDC3D-A1D6-4B98-ABBE-7DEB518FD66C}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
@@ -229,6 +209,24 @@
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Metal" ID="{6D4F4535-5B79-403A-B3A6-DED6BFB217CF}"/>
 						<CurrentSwitchRef Name="Explore" ID="{6697BDE0-68AE-4C87-A595-AF3600DA4080}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Hoverbot" ID="{2EED44DF-52DB-4844-AE15-7C16ABC33250}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Hoverbot_spawn" ID="{C015577A-8E63-47CF-B934-1DFBB4B001A5}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Hoverbot_alert" ID="{CD913A91-EE35-4163-BAFB-C4E44495EB32}" WorkUnitID="{3FA6353B-6C14-446E-B7B4-9CFFA1C0CAD7}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Metal" ID="{6D4F4535-5B79-403A-B3A6-DED6BFB217CF}"/>
+						<CurrentSwitchRef Name="Fight" ID="{723FF094-A931-44CF-90CE-646690BE09AD}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

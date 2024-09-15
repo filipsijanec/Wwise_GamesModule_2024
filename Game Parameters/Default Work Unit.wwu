@@ -29,6 +29,12 @@
 						<Property Name="Max" Type="Real64" Value="13"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Hoverbot_alerted_count" ID="{D9C05E2C-7322-4384-A4AF-52AACA48C764}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="8"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

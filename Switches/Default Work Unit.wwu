@@ -8,6 +8,31 @@
 						<Switch Name="Explore" ID="{6697BDE0-68AE-4C87-A595-AF3600DA4080}"/>
 						<Switch Name="Fight" ID="{723FF094-A931-44CF-90CE-646690BE09AD}"/>
 					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Hoverbot_alerted_count" ID="{D9C05E2C-7322-4384-A4AF-52AACA48C764}"/>
+						<Curve Name="" ID="{702B891B-85A5-4C37-91CF-7C601CB0E476}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>8</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
 				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>

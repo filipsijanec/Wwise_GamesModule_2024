@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Music_Level_Start" ID="{D7ADF4BF-F56F-4F3A-AC66-1D56CBFF4BD6}">
+				<Event Name="Music_Game_Start" ID="{D7ADF4BF-F56F-4F3A-AC66-1D56CBFF4BD6}">
 					<ChildrenList>
 						<Action Name="" ID="{8BD0616B-573D-4EA8-B893-F7CB0C2EE662}" ShortID="509157080">
 							<PropertyList>
@@ -69,6 +69,11 @@
 						<Action Name="" ID="{336409F7-77E2-4369-8909-A867CB23C900}" ShortID="373423653">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="23"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -94,6 +99,11 @@
 						<Action Name="" ID="{4A3B59BA-6F0C-4839-9B49-6FBA08E954AF}" ShortID="141150480">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="23"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">

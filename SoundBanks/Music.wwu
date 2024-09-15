@@ -16,7 +16,7 @@
 						<ObjectRef Name="Music_Player_Defeat" ID="{DE7EAC10-0E50-4B3E-8C69-EC30EBA46919}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_Basement_Enter" ID="{5054E2A4-AFE3-4C7C-9690-A73639C6FDCF}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_Game_Unpause" ID="{BEC54676-E8A6-4CD9-B3DA-D9AFAE57BE97}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Music_Level_Start" ID="{D7ADF4BF-F56F-4F3A-AC66-1D56CBFF4BD6}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_Game_Start" ID="{D7ADF4BF-F56F-4F3A-AC66-1D56CBFF4BD6}" WorkUnitID="{2C4DEB51-58E9-42BC-A171-7F403B2024D1}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

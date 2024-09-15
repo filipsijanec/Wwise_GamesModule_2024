@@ -225,28 +225,7 @@
 				</Event>
 				<Event Name="Hoverbot_spawn" ID="{C015577A-8E63-47CF-B934-1DFBB4B001A5}">
 					<ChildrenList>
-						<Action Name="" ID="{92FC6772-450E-402A-BC43-994D932F2D44}" ShortID="890682097">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Hoverbot move loop" ID="{6DBB7381-EF10-4D64-9F16-0E687DDC0A93}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{3307421E-F0A0-4BA4-9AA7-9FED2178343A}" ShortID="1031979736">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Hoverbot_move" ID="{DDC9505F-8E80-4996-814A-A76A089EF3CB}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
@@ -337,13 +316,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Hoverbot_chatter" ID="{37BCB804-9467-456F-8996-A2323C376423}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{42087C82-4671-4E1A-9FD7-7D249298A4CD}" ShortID="90757254">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Hoverbot_move" ID="{DDC9505F-8E80-4996-814A-A76A089EF3CB}" WorkUnitID="{2BD293DD-2D2A-4D86-BDC2-E2ADDF896BD4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -555,7 +527,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Menu_Buttons_Mouse_Over" ID="{4DFA138E-EEB7-45DA-B086-8B0694EC518C}">
+				<Event Name="Menu_Button_Hover" ID="{4DFA138E-EEB7-45DA-B086-8B0694EC518C}">
 					<ChildrenList>
 						<Action Name="" ID="{CCD4AD80-C279-4ABC-A8F7-F2B03DAEBE92}" ShortID="945266876">
 							<ReferenceList>
@@ -566,7 +538,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Menu_Buttons_Back" ID="{7830B9B3-3403-430C-B29C-3064995AF989}">
+				<Event Name="Menu_Button_Exit" ID="{7830B9B3-3403-430C-B29C-3064995AF989}">
 					<ChildrenList>
 						<Action Name="" ID="{450AC49F-A1FB-4D11-940E-BCE2732B571A}" ShortID="738388050">
 							<ReferenceList>
@@ -577,7 +549,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Menu_Buttons_Confirm" ID="{8AA0DCDD-F002-48FD-99C9-DA0213CCFBD5}">
+				<Event Name="Menu_Button_Confirm" ID="{8AA0DCDD-F002-48FD-99C9-DA0213CCFBD5}">
 					<ChildrenList>
 						<Action Name="" ID="{F89A445A-FDF4-4149-919B-CDF3A18836EE}" ShortID="351591978">
 							<ReferenceList>
@@ -588,8 +560,8 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Level_start" ID="{1083295C-F9AE-431F-8AA4-F0126475301D}"/>
-				<Event Name="Hoverbot_alert_stop" ID="{A27754EB-7144-442C-AAFA-2B86BD1C06D9}">
+				<Event Name="Game_start" ID="{1083295C-F9AE-431F-8AA4-F0126475301D}"/>
+				<Event Name="Enemy_Stop_sound" ID="{A27754EB-7144-442C-AAFA-2B86BD1C06D9}">
 					<ChildrenList>
 						<Action Name="" ID="{FD019A80-3D8C-4983-930F-24B047ECB494}" ShortID="659864861">
 							<PropertyList>
@@ -633,6 +605,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Menu_Press_play" ID="{06990FB8-D49E-4A90-AB4C-95E0A4D0F109}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
