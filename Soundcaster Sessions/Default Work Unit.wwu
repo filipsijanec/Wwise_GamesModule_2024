@@ -70,7 +70,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Metal" ID="{6D4F4535-5B79-403A-B3A6-DED6BFB217CF}"/>
-						<CurrentSwitchRef Name="Fight" ID="{723FF094-A931-44CF-90CE-646690BE09AD}"/>
+						<CurrentSwitchRef Name="Explore" ID="{6697BDE0-68AE-4C87-A595-AF3600DA4080}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="PlayerFire" ID="{CF0FEB9E-99D6-4B74-94B2-89434B7B5F3E}">
